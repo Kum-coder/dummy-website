@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        
+            
+            
+        
+
+        body {
+            padding: 30px 60px
+        }
+
+        .section {
+            display: flex;
+            background-color: #f6f6f6;
+            border-radius: 48px;
+            gap: 120px;
+        }
+
+        .first_container,
+        .second_container {
+            width: 100%;
+        }
+
+        .first_container {
+            padding: 48px 0 48px 48px
+        }
+
+        .first_container h1 {
+            font-family: inter;
+            font-size: 44px;
+            font-weight: 800;
+            line-height: 53.25px;
+            text-align: left;
+            color: rgb(22, 34, 44);
+        }
+
+        .first_container p,
+        .div_container p {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            color: #434343;
+        }
+        }
+
+        .first_container .div_container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .but_container {
+            display: flex;
+            align-items: center;
+            gap: 48px;
+        }
+
+        .playbtn_container {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            align-items: center;
+        }
+
+        .but_container span {
+            width: 72px;
+            height: 72px;
+            background: #5469AB;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .but_container button {
+            width: 290px;
+            height: 64px;
+            padding: 0px 64px 0px 64px;
+            border-radius: 48px;
+            background-color: #5469AB;
+            font-family: JUST Sans;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 31.2px;
+            text-align: left;
+
+            color: #FFFFFF;
+            border: none;
+        }
+
+
+
+        .navbar {
+            font-family: calibri;
+        }
+
+        .navdiv {
+            display: flex;
+            gap: 4.5rem;
+            align-items: center;
+
+
+        }
+
+        li {
+
+            display: inline-block;
+            width: 150px;
+
+        }
+
+        .image {
+            float: left;
+        }
+
+
+
+
+        .myimg {
+            float: right;
+        }
+
+        .section {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .two h4 {
+            max-width: 168px;
+            font-family: inter;
+            font-size: 48px;
+            line-height: 62.4px;
+
+
+
+        }
+
+
+        .two h4 span {
+            color: #f2cc52;
+
+        }
+
+        .hello {
+            display: flex;
+            flex-direction: row;
+            gap: 5rem;
+        }
+
+        .hido {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2%;
+
+        }
+
+        .hido div h4 span {
+            color: #5469AB;
+            font-size: 50px;
+            color: transparent;
+            -webkit-text-stroke: 0.6px #434343;
+
+        }
+
+        .hido div {
+            background-color: #5469AB;
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .hido div h4 {
+            font-size: 50px;
+
+
+        }
+
+        .bhai {
+            display: flex;
+            gap: 120px;
+        }
+
+        .super,
+        .super2 {
+            width: 100%;
+        }
+
+        .super h2 span {
+            color: #f2cc52
+        }
+
+        .super h2 {
+            font-family: inter;
+            font-weight: 800;
+            font-size: 44px;
+            line-height: 53.25px;
+        }
+
+        .super p {
+            font-family: inter;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .super button {
+            width: 329px;
+            height: 64px;
+
+            border-radius: 48px;
+            background-color: #5469AB;
+            font-family: JUST Sans;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 31.2px;
+            text-align: left;
+            padding: 0px 64px 0px 64px;
+            color: #f6f6f6;
+            border: none;
+
+
+        }
+
+        .super2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2%;
+
+        }
+
+        .super2 h4 {
+            font-family: inter;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .super2 span a {
+            color: #f2cc52
+        }
+
+        .window {
+
+
+
+            gap: 120px;
+
+
+            border-radius: 48px;
+
+        }
+
+        .king,
+        .queen {
+            width: 100%;
+        }
+
+        .king {
+            width: 456px;
+            height: 304px;
+            padding-top: 172px;
+            padding-left: 156px;
+            background-color: #f6f6f6;
+
+        }
+
+        .king h4 {
+            font-family: inter;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        .king p {
+            font-family: inter;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        .usa h2 {
+            font-family: inter;
+            font-weight: 800;
+            font-size: 44px;
+            line-height: 53.25px;
+            text-align: center;
+        }
+
+        .india span button {
+            width: 264px;
+            height: 16px;
+            padding-top: 2px;
+            border-radius: 24px;
+            background-color: #00CA75;
+            border: none;
+        }
+
+        .mera {
+            display: flex;
+            flex-direction: row;
+            gap: 5rem;
+        }
+
+        .joker h2 {
+            text-align: center;
+            font-family: inter;
+            font-weight: 800;
+            font-size: 44px;
+            line-height: 53.25px;
+        }
+
+        .joker h2 span {
+            color: #f2cc52;
+        }
+
+        .joker p {
+            text-align: center;
+            font-family: inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        .assam {
+            display: flex;
+            ;
+        }
+
+        .abhi,
+        .suri {
+            width: 100%;
+        }
+
+        .abhi {
+            width: 456px;
+            height: 355px;
+            border-radius: 24px;
+            padding-top: 312px;
+            padding-left: 60px;
+
+        }
+
+        .abhi h5 {
+            font-weight: 700;
+            font-family: inter;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        .abhi button {
+            width: 283px;
+            height: 64px;
+            border-radius: 48px;
+            padding: 0px 64px 0px 64px;
+            border: none;
+            font-size: 24px;
+            font-weight: 400;
+            background-color: #5469AB;
+            color: #f6f6f6;
+        }
+
+        .guppu h2 span {
+            color: #f2cc52;
+        }
+
+        .guppu h2 {
+            text-align: center;
+            font-weight: 800;
+            font-family: inter;
+            font-size: 44px;
+            line-height: 53.25px;
+        }
+
+        .guppu p {
+            font-family: inter;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            line-height: 24px;
+        }
+        @media only screen and(max-width:716px){
+            body{
+                background-color: #5469AB;
+            }
+
+
+        } 
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">
+                <h1
+                    style="max-width: 168px;height: 70px;font-family: inter;font-size: 900;font-size: 57.6px;line-height: 69.71px;">
+                    LOGO
+
+                </h1>
+            </div>
+            <ul class="navlist">
+
+                <li>home</li>
+                <li>products</li>
+                <li>services</li>
+                <li>blogs</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+            <button style="background-color: blue;color: white;font-size: larger;border-radius: 50px;">
+                contact us:
+            </button>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="first_container">
+            <h1>Lorem ipsum dolor sit amet consectetur. Amet sit sed diam nec erat habitant.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                eget. Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam.</p>
+            <div class="div_container">
+                <img class="image" src="Group 8.png" alt="">
+                <p>People brought our services today.</p>
+            </div>
+            <div class="but_container">
+                <button class="button">Get a proposal</button>
+
+                <div class="playbtn_container">
+                    <img src="Play.png" alt="">
+                    <p> watch our videos</p>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="hello">
+                <div class="two">
+                    <h4><span>200+</span></h4>
+                    <span>projects complete</span>
+                </div>
+                <div class="two">
+                    <h4><span>81+</span></h4>
+                    <span>active customers</span>
+                </div>
+                <div class="two">
+                    <h4><span>24/7</span></h4>
+                    <span>customer support</span>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+        </div>
+
+        <div class="second_container">
+            <img class=" myimg" width="100%" src="./Group 26.png" alt="">
+        </div>
+
+    </section>
+
+    <section class="bhai">
+        <div class="super">
+            <h2>
+                <span>
+                    Our Advanced
+                </span>
+                Services
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                eget. Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam.</p>
+
+            <button>Schedule Meeting</button>
+            <p><a href="/">View all services</a></p>
+
+
+        </div>
+        <div class="super2">
+            <div> <img src="Vector.png" alt="">
+                <h4>cloud app development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget.</p>
+                <span> <a href="/">learn more</a></span>
+            </div>
+            <div>
+                <img src="Vector.png" alt="">
+                <h4>app development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget.</p>
+                <span> <a href="/">learn more</a></span>
+            </div>
+            <div>
+                <img src="Vector.png" alt="">
+                <h4>ui/ux design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget.</p>
+                <span><a href="/">learn more</a></span>
+            </div>
+            <div>
+                <img src="Vector.png" alt="">
+                <h4>web development</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget.</p>
+                <span> <a href="/">learn more</a></span>
+            </div>
+        </div>
+    </section>
+    <section class="window">
+        <div class="king">
+            <h4>From Idea-To-Development</h4>
+            <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                eget. Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam. Eget fames varius volutpat a
+                a. Cursus sed id pellentesque at nullam.</p>
+        </div>
+        <div class="queen">
+
+        </div>
+    </section>
+    <section class="usa">
+        <h2>
+            Lorem ipsum dolor sit amet consectetur. Amet sit sed diam nec erat habitant.
+        </h2>
+        <div class="mera">
+            <div class="india">
+                <span>
+                    <button></button>
+
+                </span>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget. Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam. </p>
+                <img src="Vector.png" alt="">
+            </div>
+            <div class="india">
+                <span>
+                    <button></button>
+
+                </span>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget. Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam. </p>
+                <img src="Vector.png" alt="">
+            </div>
+            <div class="india">
+                <span>
+                    <button></button>
+
+                </span>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget. Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam. </p>
+                <img src="Vector.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="joker">
+        <h2>
+            <span>
+                our recent
+            </span>work
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet eget.
+            Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam.</p>
+        <div class="assam">
+            <div class="abhi">
+                <h6>
+                    our project
+                </h6>
+                <h5>
+                    software products development
+                </h5>
+                <table>
+                    <tr>
+                        <td>service</td>
+                        <td>year</td>
+                        <td>client</td>
+                    </tr>
+                    <tr>
+                        <th>ui/ux and development</th>
+                        <th>2022</th>
+                        <th>xyz</th>
+                    </tr>
+
+                </table>
+                <button> <a href="/"></a>View Portfolio</button>
+            </div>
+            <div class="suri">
+                <img src="Group 18.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="guppu">
+        <h2>
+            <span>
+                our product development
+            </span>process
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet eget.
+            Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam.</p>
+        <div class="hido">
+            <div>
+
+                <h4><span>01</span>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget. Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam.</p>
+            </div>
+            <div>
+
+                <h4><span>01</span>Lorem Ipsum</h4>
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget. Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam.
+            </div>
+            <div>
+
+                <h4><span>01</span>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget. Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam.</p>
+            </div>
+            <div>
+
+                <h4><span>01</span>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget. Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam.</p>
+            </div>
+            <div>
+
+                <h4> <span>01</span>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget. Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam.</p>
+            </div>
+            <div>
+
+                <h4><span>01</span>Lorem Ipsum</h4>
+                <p>Lorem ipsum dolor sit amet consectetur. Blandit faucibus condimentum et in praesent pellentesque amet
+                    eget. Eget fames varius volutpat a a. Cursus sed id pellentesque at nullam.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
